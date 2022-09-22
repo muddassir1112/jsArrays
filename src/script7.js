@@ -30,15 +30,15 @@ var arr = [{Company: "Samsung",  Model: "Galaxy",  Memory: 64,  Price: 15000,  Q
     let item = document.getElementById("data").value;
     let quantity = document.getElementById("quan").value;
     if (item == "Samsung") {
-        arr[0].Quantity= parseInt(quantity)+parseInt(arr[0].Quantity);
+        arr[0].Quantity= parseInt(quantity);
     } else if (item == "Nokia") {
-        arr[1].Quantity= parseInt(quantity)+parseInt(arr[1].Quantity);
+        arr[1].Quantity= parseInt(quantity);
     } else if (item == "Xiaomi") {
-        arr[2].Quantity= parseInt(quantity)+parseInt(arr[2].Quantity);
+        arr[2].Quantity= parseInt(quantity);
     } else if (item == "Motoroala") {
-        arr[3].Quantity= parseInt(quantity)+parseInt(arr[3].Quantity);
+        arr[3].Quantity= parseInt(quantity);
     } else if (item == "Apple") {
-        arr[4].Quantity= parseInt(quantity)+parseInt(arr[4].Quantity);
+        arr[4].Quantity= parseInt(quantity);
     }
   
     let table =
