@@ -17,6 +17,22 @@ function add() {
         Memory:memory,
         Price:price,
     }
+    if(data.Company==""&&data.Model==""&&data.Memory==""&&data.Price==""){
+        alert("All Fields Are Mandatory");
+    }
+    else if(data.Company==""){
+        alert("Company field is Mandatory");
+    }
+    else if(data.Model==""){
+        alert("Model field is Mandatory");
+    }
+    else if(data.Memory==""){
+        alert("Memory field is Mandatory");
+    }
+    else if(data.Price==""){
+        alert("Price field is Mandatory");
+    }
+    else{
     arr.push(data);
     var html="<table><tr><th>Company</th><th>Model</th><th>Memory(GB)</th><th>Price(RS)</th></tr>";
     arr.forEach((ele) => {
@@ -32,4 +48,6 @@ function add() {
     });
     html+="</table>";
     document.getElementById("demo").innerHTML = html;
+
+}    
 }
